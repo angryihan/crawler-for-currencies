@@ -1,18 +1,19 @@
-var request = require('request');
-var cheerio = require('cheerio');
-var fs = require('fs');
+var async = require('async');
 var crawler = require('./crawler.js');
 var dateHelper = require('./dateHelper.js');
-var async = require('async');
 
 var generateBtn = document.querySelector("#generate");
 var startInput = document.querySelector("#startDate");
 var endInput = document.querySelector("#endDate");
 var pjSelect = document.querySelector("#pjname");
+var isGenerating = false;
 
 generateBtn.addEventListener("click", generateHandler);
-
-var isGenerating = false;
+endInput.addEventListener("keydown", function(event) {
+    if (event.keyCode == 13) {
+        generateBtn.click();
+    }
+});
 
 function generateHandler() {
     if(!isGenerating){
@@ -28,7 +29,6 @@ function generateHandler() {
             console.log(err);
         });
     }
-
 }
 
 function enableBtn() {
