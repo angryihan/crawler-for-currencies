@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/*reset*/
+body,div,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,p,blockquote,pre,code,tr,th,td,hr,menu {
+    margin: 0;
+    padding: 0
+}
+
+ol,ul {
+    list-style-type: none
+}
+
+body {
+    font-family: "Arial", "PingFang SC", "Microsoft Yahei", "SimSun", sans-serif;
+}
+
+.wrap {
+	padding: 10px 10px 0;
+	width: 362px;
+	margin: 0 auto;
+}
+
+#generate {
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    box-sizing: content-box;
+    cursor: pointer;
+    height: 28px;
+    line-height: 28px;
+    width: 100%;
+    font-size: 14px;
+    color: #666666;
+    background: #FBFBFB;
+    border: 1px solid #DDDDDD;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: -webkit-linear-gradient(top, white, #f8f8f8);
+    background: -moz-linear-gradient(top, white, #f8f8f8);
+    background: linear-gradient(to bottom, white, #f8f8f8);
+}
+
+#generate:hover {
+    color: #666666;
+    background: #F5F5F5;
+    text-decoration: none;
+    background: -webkit-linear-gradient(top, whitesmoke, whitesmoke);
+    background: -moz-linear-gradient(top, whitesmoke, whitesmoke);
+    background: linear-gradient(to bottom, whitesmoke, whitesmoke);
+}
+
+input, select {
+	font-size: 12px;
+    vertical-align: top;
+    border: 1px solid #CCCCCC;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    width: 270px;
+    color: #333;
+}
+
+select {
+    height: 30px;
+    line-height: 30px;
+    width: 292px;
+    outline:none;
+}
+
+input:focus, select:focus {outline:none;border-color:#c69f54;}
+
+
+.btn-part {
+	margin-bottom: 18px;
+	width: 360px;
+}
+
+dl {
+    font-size: 12px;
+    color: #666;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+dt,
+dd {
+    float: left;
+    min-height: 1px;
+}
+
+dt {
+    width: 60px;
+    margin-right: 10px;
+    line-height: 30px;
+    text-align: right;
+}
+
+dd {
+    width: 292px;
+}

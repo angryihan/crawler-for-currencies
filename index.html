@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>汇率爬虫-Muscle Made</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+
+    <div class="wrap">
+        <dl>
+            <dt>起始日期：</dt>
+            <dd>
+                <input type="text" id="startDate" placeholder="请输入起始日期" value="2016-01-01">
+            </dd>
+        </dl>
+        <dl>
+            <dt>结束日期：</dt>
+            <dd>
+                <input type="text" id="endDate" placeholder="请输入结束日期" value="2016-04-01">
+            </dd>
+        </dl>
+        <dl>
+            <dt>牌价选择：</dt>
+            <dd>
+                <select id="pjname">
+                    <option value="1316">美元</option>
+                    <option value="1314">英镑</option>
+                    <option value="1315">港币</option>
+                    <option value="1317">瑞士法郎</option>
+                    <option value="1318">德国马克</option>
+                    <option value="1319">法国法郎</option>
+                    <option value="1375">新加坡元</option>
+                    <option value="1320">瑞典克朗</option>
+                    <option value="1321">丹麦克朗</option>
+                    <option value="1322">挪威克朗</option>
+                    <option value="1323">日元</option>
+                    <option value="1324">加拿大元</option>
+                    <option value="1325">澳大利亚元</option>
+                    <option value="1326">欧元</option>
+                    <option value="1327">澳门元</option>
+                    <option value="1328">菲律宾比索</option>
+                    <option value="1329">泰国铢</option>
+                    <option value="1330">新西兰元</option>
+                    <option value="1331">韩元</option>
+                    <option value="1843">卢布</option>
+                    <option value="2890">林吉特</option>
+                    <option value="2895">新台币</option>
+                    <option value="1370">西班牙比塞塔</option>
+                    <option value="1371">意大利里拉</option>
+                    <option value="1372">荷兰盾</option>
+                    <option value="1373">比利时法郎</option>
+                    <option value="1373">芬兰马克</option>
+                    <option value="3030">印尼卢比</option>
+                    <option value="3253">巴西里亚尔</option>
+                    <option value="3899">阿联酋迪拉姆</option>
+                    <option value="3900">印度卢比</option>
+                    <option value="3901">南非兰特</option>
+                    <option value="4418">沙特里亚尔</option>
+                </select>
+            </dd>
+        </dl>
+        <p class="btn-part">
+            <a id="generate">一键获取</a>
+        </p>
+    </div>
+
+</body>
+
+<script>
+    // You can also require other files to run in this process
+    require('./assets/js/index.js')
+</script>
+
+</html>

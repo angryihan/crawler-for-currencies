@@ -1,0 +1,7 @@
+node_modules
+data
+currencies-crawler-win32-ia32
+currencies-crawler-win32-x64
+currencies-crawler-linux-ia32
+currencies-crawler-linux-x64
+currencies-crawler-linux-armv7l

@@ -1,0 +1,22 @@
+{
+  "name": "currencies-crawler",
+  "version": "1.0.0",
+  "description": "crawler for currencies",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "crawler for currencies"
+  ],
+  "devDependencies": {
+    "electron-packager": "^7.3.0",
+    "electron-prebuilt": "^1.2.0"
+  },
+  "dependencies": {
+    "request": "2.40.0",
+    "cheerio": "0.17.0",
+    "async": "*",
+    "node-xlsx": "*"
+  }
+}
