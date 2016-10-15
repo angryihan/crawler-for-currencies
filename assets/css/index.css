@@ -19,15 +19,24 @@ body {
 	margin: 0 auto;
 }
 
-#generate {
+
+
+.btn-part {
+	width: 375px;
+  overflow: hidden;
+}
+
+.btn-part a {
     vertical-align: top;
     text-align: center;
-    display: inline-block;
+    display: block;
+    float: left;
     box-sizing: content-box;
     cursor: pointer;
     height: 28px;
     line-height: 28px;
-    width: 100%;
+    width: 175px;
+    margin-right: 8px;
     font-size: 14px;
     color: #666666;
     background: #FBFBFB;
@@ -40,7 +49,7 @@ body {
     background: linear-gradient(to bottom, white, #f8f8f8);
 }
 
-#generate:hover {
+.btn-part a:hover {
     color: #666666;
     background: #F5F5F5;
     text-decoration: none;
@@ -69,11 +78,6 @@ select {
 
 input:focus, select:focus {outline:none;border-color:#c69f54;}
 
-
-.btn-part {
-	margin-bottom: 18px;
-	width: 360px;
-}
 
 dl {
     font-size: 12px;
