@@ -10,8 +10,8 @@ module.exports = {
             name: "currencies",
             data: array
         }]);
-        var filePath = path.join(__dirname, '../../data/' + pjname + '.xlsx');
-        var dirPath = path.join(__dirname, '../../data/');
+        var filePath = path.join(__dirname, '../../../data/' + pjname + '.xlsx');
+        var dirPath = path.join(__dirname, '../../../data/');
 
         fs.exists(dirPath, function(exists) {
             if (!exists) {
