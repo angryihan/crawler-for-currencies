@@ -1,5 +1,6 @@
-#爬虫工具
+# 汇率爬虫
 
-##node.js写的爬虫工具，electron打包成可执行文件
+这是一个用于爬取历史汇率，并且导出成excel的小程序，基于 [Electron](http://electron.atom.io/) 开发。
 
-主要用于爬取历史汇率，并且导出成excel。
+你可以下载源码，或者直接下载可执行版本：
+ - [下载地址](https://pan.baidu.com/s/1c2kMZzM)
