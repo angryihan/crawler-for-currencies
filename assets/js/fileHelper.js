@@ -24,7 +24,7 @@ module.exports = {
     writeFile: function(buffer, filePath, cb) {
         fs.writeFileSync(filePath, buffer, 'binary');
         // 打开文件
-        shell.openExternal(filePath);
+        shell.openItem(filePath);
         cb(null);
     },
     openDir: function() {
@@ -34,11 +34,11 @@ module.exports = {
                     if (err) {
                         console.log('创建文件夹出错！');
                     } else {
-                        shell.openExternal(dirPath);
+                        shell.openItem(dirPath);
                     }
                 });
             } else {
-                shell.openExternal(dirPath);
+                shell.openItem(dirPath);
             }
         });
     }
