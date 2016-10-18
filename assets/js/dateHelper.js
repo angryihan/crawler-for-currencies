@@ -11,11 +11,11 @@ module.exports = {
         return dateArray;
     },
     getDateString: function(date) {
-        var m = this.zeroPadding(date.getMonth() + 1);
-        var d = this.zeroPadding(date.getDate());
+        var m = this.leftPadding(date.getMonth() + 1);
+        var d = this.leftPadding(date.getDate());
         return date.getFullYear() + '-' + m + '-' + d;
     },
-    zeroPadding: function(num) {
-        return num >= 10 ? num : '0' + num;
+    leftPadding: function(num) {
+        return ('0' + num).slice(-2);
     }
 }
