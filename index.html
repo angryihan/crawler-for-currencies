@@ -10,7 +10,7 @@
 <body>
     <div class="wrap">
         <dl>
-            <dt>牌价选择：</dt>
+            <dt><label for="pjname">牌价选择：</label></dt>
             <dd>
                 <select id="pjname">
                     <option value="1316">美元</option>
@@ -51,21 +51,21 @@
         </dl>
 
         <dl>
-            <dt>起始日期：</dt>
+            <dt><label for="startDate">起始日期：</label></dt>
             <dd>
-                <input type="text" id="startDate" placeholder="请输入起始日期" value="2016-01-01">
+                <input type="text" id="startDate" class="JS-input" placeholder="请输入起始日期" value="">
             </dd>
         </dl>
         <dl>
-            <dt>结束日期：</dt>
+            <dt><label for="endDate">结束日期：</label></dt>
             <dd>
-                <input type="text" id="endDate" placeholder="请输入结束日期" value="2016-04-14">
+                <input type="text" id="endDate" class="JS-input" placeholder="请输入结束日期" value="">
             </dd>
         </dl>
 
         <p class="btn-part">
-            <a id="generate">一键获取</a>
-            <a id="openDir">打开文件夹</a>
+            <input type="button" id="generate" value="一键获取"/>
+            <input type="button" id="openDir" value="打开文件夹"/>
         </p>
     </div>
 </body>

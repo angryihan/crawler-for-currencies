@@ -8,23 +8,29 @@ var openDirBtn = document.querySelector("#openDir");
 var startInput = document.querySelector("#startDate");
 var endInput = document.querySelector("#endDate");
 var pjSelect = document.querySelector("#pjname");
+var inputList = document.querySelectorAll(".JS-input");
 var isGenerating = false;
 
 var currenciedCrawler = {
     init: function() {
+        startInput.value = dateHelper.getStartDayString();
+        endInput.value = dateHelper.getEndDayString();
         this.bindEvents();
     },
     bindEvents: function() {
         var self = this;
         generateBtn.addEventListener("click", self.generateHandler);
         openDirBtn.addEventListener("click", self.openDirHandler);
-        endInput.addEventListener("keydown", function(event) {
-            if (event.keyCode == 13) {
-                self.generateHandler();
-            }
+        inputList.forEach(function(input) {
+            input.addEventListener("keydown", function(event) {
+                if (event.keyCode == 13) {
+                    self.generateHandler();
+                }
+            });
         });
     },
     generateHandler: function() {
+        currenciedCrawler.blurBtn();
         if (!isGenerating) {
             currenciedCrawler.disableBtn();
             async.series({
@@ -40,15 +46,20 @@ var currenciedCrawler = {
         }
     },
     openDirHandler: function() {
+        currenciedCrawler.blurBtn();
         fileHelper.openDir();
     },
     enableBtn: function() {
         isGenerating = false;
-        generateBtn.text = "一键获取";
+        generateBtn.value = "一键获取";
     },
     disableBtn: function() {
         isGenerating = true;
-        generateBtn.text = "获取中，请稍候……";
+        generateBtn.value = "获取中，请稍候……";
+    },
+    blurBtn: function() {
+        generateBtn.blur();
+        openDirBtn.blur();
     }
 }
 

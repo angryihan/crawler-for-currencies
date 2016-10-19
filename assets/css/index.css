@@ -6,7 +6,7 @@ body,div,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,p,blockquote,pre,code,tr,th,td,hr,m
 }
 
 ol,ul {
-    list-style-type: none
+    list-style-type: none;
 }
 
 body {
@@ -25,7 +25,8 @@ body {
   margin-top: 15px;
 }
 
-.btn-part a {
+.btn-part input[type="button"] {
+    font-family: "Arial", "PingFang SC", "Microsoft Yahei", "SimSun", sans-serif;
     vertical-align: top;
     text-align: center;
     display: block;
@@ -35,6 +36,7 @@ body {
     height: 28px;
     line-height: 28px;
     width: 175px;
+    padding: 0;
     margin-right: 8px;
     font-size: 14px;
     color: #666666;
@@ -48,7 +50,7 @@ body {
     background: linear-gradient(to bottom, white, #f8f8f8);
 }
 
-.btn-part a:hover {
+.btn-part input[type="button"]:hover {
     color: #666666;
     background: #F5F5F5;
     text-decoration: none;
@@ -57,7 +59,12 @@ body {
     background: linear-gradient(to bottom, whitesmoke, whitesmoke);
 }
 
+.btn-part input[type="button"]:focus {
+    border-color:#c69f54;
+}
+
 input, select {
+    font-family: "Arial", "PingFang SC", "Microsoft Yahei", "SimSun", sans-serif;
 	font-size: 12px;
     vertical-align: top;
     border: 1px solid #CCCCCC;
@@ -76,7 +83,6 @@ select {
 }
 
 input:focus, select:focus {outline:none;border-color:#c69f54;}
-
 
 dl {
     font-size: 12px;

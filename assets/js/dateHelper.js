@@ -1,3 +1,15 @@
+var today = new Date();
+
+function getDateString(date) {
+    var m = leftPadding(date.getMonth() + 1);
+    var d = leftPadding(date.getDate());
+    return date.getFullYear() + '-' + m + '-' + d;
+}
+
+function leftPadding(num) {
+    return ('0' + num).slice(-2);
+}
+
 module.exports = {
     getDateArray: function(startDate, endDate) {
         var dateArray = [];
@@ -5,17 +17,15 @@ module.exports = {
         var end = new Date(endDate);
         var temp = new Date(startDate);
         while (temp <= end) {
-            dateArray.push(this.getDateString(temp));
+            dateArray.push(getDateString(temp));
             temp = new Date(temp.getFullYear(), temp.getMonth() + 1, temp.getDate());
         }
         return dateArray;
     },
-    getDateString: function(date) {
-        var m = this.leftPadding(date.getMonth() + 1);
-        var d = this.leftPadding(date.getDate());
-        return date.getFullYear() + '-' + m + '-' + d;
+    getStartDayString: function() {
+        return getDateString(new Date(today.getFullYear(), 0, 1));
     },
-    leftPadding: function(num) {
-        return ('0' + num).slice(-2);
+    getEndDayString: function() {
+        return getDateString(today);
     }
 }
